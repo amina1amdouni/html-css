@@ -1,0 +1,204 @@
+.section1 {  
+    background-image: url("https://img.freepik.com/free-photo/closeup-businessman-using-mobile-phone-gray-scale_53876-16108.jpg?t=st=1724104170~exp=1724107770~hmac=fa7e71cd8027872333d55dd3f640258f9f2d8af92058390c7fcb7f95d0c6412d&w=1060");
+    background-size:cover;
+    height: 650px;
+
+ }
+
+ .title{
+    color: aliceblue;
+    font-size: 50px;
+    margin-left: 850px;
+    padding-top: 100px;
+ } 
+ .number{
+    color:rgb(244, 224, 3);
+    margin-left: 950px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+   
+ }
+ .number:hover,
+.number:focus {
+    color: white;
+}
+
+/* Active (clicked) style */
+.number:active {
+    color: white;
+}
+.paragraphe{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 850px;
+    margin-top: 50px;
+}
+.icone{
+   width:50px;
+   margin-left: -95px;
+   margin-bottom: -9px;
+}
+.btn{
+    background-color:rgb(244, 224, 3) ;
+   
+    margin-left: 850px;
+    border-radius: 10px;
+    margin-top:30px;
+    color:aliceblue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background-color: #e6e600; /* Slightly darker yellow */
+    color: rgb(24, 4, 114); /* Change text color to black on hover */
+}
+
+/*section2*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     /* pour ajouter de l'espace entre les images */
+   
+    width: 78%;
+  
+    margin-inline: 250px;
+    margin-top: 5%;
+  }
+
+  .grid-container img {
+    width: 190%;
+    height: 100%;
+    border-radius: 20px;
+    
+  
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    row-gap: 50px;
+    column-gap: 200px;
+    margin: 105px auto; /* Add some margin to allow scrolling */
+    padding: 0 20px;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position for animation */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.grid-item.in-view {
+    opacity: 1; /* Show when in view */
+    transform: translateY(0); /* Animate to final position */
+}
+
+/* Apply staggered animation delays */
+.grid-item:nth-child(1).in-view { transition-delay: 0.1s; }
+.grid-item:nth-child(2).in-view { transition-delay: 0.3s; }
+.grid-item:nth-child(3).in-view { transition-delay: 0.6s; }
+.grid-item:nth-child(4).in-view { transition-delay: 0.9s; }
+.grid-item:nth-child(5).in-view { transition-delay: 1s; }
+.grid-item:nth-child(6).in-view { transition-delay: 1.3s; }
+
+
+  #title{
+    margin-top: 4%;
+    font-size: 30px;
+   text-align: center;
+   font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  /* Initialement, le titre est caché */
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, filter 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* Quand le titre devient visible */
+  .visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  
+  /* Définir l'animation fade-blur */
+  @keyframes fade-blur {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ajouter la classe d'animation */
+  .animate {
+    animation: fade-blur 1s ease-out;
+  }
+  
+
+
+
+  /* section3 */
+  .section3{
+    background-color: #d7c013;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .blue-box {
+    background-color: rgb(102, 102, 232); /* Blue background for the box */
+    color: white; /* White text color to contrast with the blue background */
+    padding: 20px; /* Space inside the blue box */
+    border-radius: 10px; /* Optional rounded corners */
+    width: 500px; /* Optional width for the box */
+    height: 445px;
+    margin-left: 725px; /* Center the box horizontally and add vertical space */
+    position: relative; 
+}
+
+.blue-box p {
+    margin: 0; /* Remove default paragraph margins */
+}
+.img3{
+    width:500px;
+    height:auto ;
+    margin-top: -690px; /* Move the image upwards */
+    margin-left: 215px;
+    position: relative; /* Allows using negative margin */
+   /* Another way to move the image upwards */
+}
+.box{
+    height: 500px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+ 
